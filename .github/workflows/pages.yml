@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout public files
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       - name: Validate public snapshot and static paths
         run: python3 scripts/validate_pages_release.py public
       - name: Configure Pages
