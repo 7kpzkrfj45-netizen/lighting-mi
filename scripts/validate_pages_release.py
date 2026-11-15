@@ -4,6 +4,7 @@ import hashlib
 import json
 import re
 from datetime import date, datetime, timezone
+from zoneinfo import ZoneInfo
 from pathlib import Path
 from urllib.parse import urlsplit
 
@@ -33,7 +34,7 @@ def validate(root):
     require(manifest['schema_version']==1 and re.fullmatch('[0-9a-f]{20}',manifest['dataset_version']), 'Invalid schema/version')
     cutoff = date.fromisoformat(manifest['data_as_of'])
     generated = datetime.fromisoformat(manifest['generated_at'])
-    require(cutoff <= datetime.now(timezone.utc).date() and generated.tzinfo is not None, 'Invalid manifest dates')
+    require(cutoff <= datetime.now(ZoneInfo('Asia/Shanghai')).date() and generated.tzinfo is not None, 'Invalid manifest dates')
     expected = ASSETS | {'manifest.json'}
     payloads = {}
     for key, item in manifest['files'].items():
@@ -89,7 +90,7 @@ def validate(root):
     require(set(payloads)=={'companies.json','events-index.json','coverage.json','redirects.json'}|{f'events/{e["id"]}.json' for e in index}, 'Orphan data/detail file')
     require({'summary','complete','schema_version'} <= set(payloads['coverage.json']) <= {'summary','complete','schema_version','reviewed_at'} and payloads['coverage.json']['complete'] is False, 'Invalid coverage fields')
     if payloads['coverage.json'].get('reviewed_at'):
-        require(date.fromisoformat(payloads['coverage.json']['reviewed_at'])<=datetime.now(timezone.utc).date(), 'Future review date')
+        require(date.fromisoformat(payloads['coverage.json']['reviewed_at'])<=datetime.now(ZoneInfo('Asia/Shanghai')).date(), 'Future review date')
     redirects=payloads['redirects.json'];ids={e['id'] for e in index}
     require(all(old not in ids and target in ids and re.fullmatch('[1-9][0-9]*',old) for old,target in redirects.items()), 'Unsafe redirect')
     return {'files':len(actual),'events':len(index),'companies':len(companies),'dataset_version':manifest['dataset_version'],'data_as_of':manifest['data_as_of']}

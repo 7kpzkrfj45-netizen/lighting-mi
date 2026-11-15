@@ -4,6 +4,7 @@ import json
 import tempfile
 import time
 from datetime import date, datetime, timezone
+from zoneinfo import ZoneInfo
 from pathlib import Path
 from urllib.parse import urljoin, urlsplit
 from urllib.request import Request, urlopen
@@ -57,7 +58,7 @@ def check(base, expected_version=None, max_age_days=7, strict_freshness=False):
         generated = datetime.fromisoformat(manifest['generated_at'])
         if generated.tzinfo is None or generated > datetime.now(timezone.utc):
             raise ValueError('Invalid generated timestamp')
-        age = (datetime.now(timezone.utc).date()-cutoff).days
+        age = (datetime.now(ZoneInfo('Asia/Shanghai')).date()-cutoff).days
         if age<0: raise ValueError('Future data cutoff')
         warnings = []
         if age>max_age_days: warnings.append(f'资料截至日期距今 {age} 天；请检查采集、待审和同步状态，不能直接推断网站故障')

@@ -5,7 +5,7 @@
 - 网站：[https://7kpzkrfj45-netizen.github.io/lighting-mi/](https://7kpzkrfj45-netizen.github.io/lighting-mi/)
 - 发布仓库：[7kpzkrfj45-netizen/lighting-mi](https://github.com/7kpzkrfj45-netizen/lighting-mi)
 - 数据截至：2026-10-11；23 个已收录事件、19 家企业，部分覆盖。
-- 数据版本：`9a5b00985e667a6daaed`。
+- 数据版本：`a5d72b898a62627db6f5`。
 
 维护指南见 [MAINTENANCE.md](MAINTENANCE.md)。每周一及发布成功后自动巡检；依赖每月检查，不自动合并。
 

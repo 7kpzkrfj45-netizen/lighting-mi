@@ -56,6 +56,8 @@ Git 提交记录历史，当前网站不同时托管全部旧版本。公开仓�
 
 独立公开仓库位于 artifacts/github-pages-release，必须 main、工作区干净、origin 为指定公开仓库。未知未推送提交、非快进冲突、dirty 状态会停止，不自动 reset、强推或覆盖人工改动。导出目录恢复文件 .public-previous 如存在，先备份，再按发布记录判断恢复，不直接删除。若进程恰在数据替换后、commit 前退出，仓库可能 dirty：备份并核对只涉及 public/data 和 manifest，校验后手动提交该批准快照，再恢复同步；不能用 git add .。
 
+后台 Git 的 credential.helper 应先用空值清除继承的交互式助手，再添加已授权本地 CLI；避免 macOS 钥匙串弹窗阻塞无人值守任务，不修改全局凭据设置。
+
 GitHub 凭据只放本地钥匙串、SSH 凭据或忽略目录中的受保护 CLI 配置。推荐单仓库最小写权限，不使用访客 JS、JSON、远程 URL、命令参数或日志保存 Token；不提交 .env、数据库、备份、原文全文、内部审核内容。首次需要维护者完成 GitHub 官方登录；授权失效在本地重新登录，不把密码或 Token 发到聊天或 Issue。
 
 当前网络若 GitHub DNS 地址不可达，可仅在本地发布仓库设置 http.curloptResolve 到经 GitHub /meta 核实的官方地址，保持证书校验；不修改系统 DNS、关闭 TLS 或引入常驻代理。该本地连接替代配置可能随 GitHub 地址变化失效：网络恢复后删除该配置，或重新核实地址，失败不会覆盖网站。凭据助手采用本地绝对路径，工具位于忽略的 artifacts/tools，不能依赖 /tmp 中可能被清理的文件。
