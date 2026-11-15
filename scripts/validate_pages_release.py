@@ -6,7 +6,7 @@ import re
 from datetime import date, datetime, timezone
 from zoneinfo import ZoneInfo
 from pathlib import Path
-from urllib.parse import urlsplit
+from urllib.parse import urlsplit, parse_qsl
 
 ASSETS = {'.nojekyll', 'index.html', 'events.html', 'event.html', 'companies.html',
           'company.html', 'about.html', 'style.css', 'app.mjs', 'model.mjs', 'icon.svg'}
@@ -34,7 +34,7 @@ def validate(root):
     require(manifest['schema_version']==1 and re.fullmatch('[0-9a-f]{20}',manifest['dataset_version']), 'Invalid schema/version')
     cutoff = date.fromisoformat(manifest['data_as_of'])
     generated = datetime.fromisoformat(manifest['generated_at'])
-    require(cutoff <= datetime.now(ZoneInfo('Asia/Shanghai')).date() and generated.tzinfo is not None, 'Invalid manifest dates')
+    require(cutoff <= datetime.now(ZoneInfo('Asia/Shanghai')).date() and generated.tzinfo is not None and generated <= datetime.now(timezone.utc), 'Invalid manifest dates')
     expected = ASSETS | {'manifest.json'}
     payloads = {}
     for key, item in manifest['files'].items():
@@ -66,9 +66,12 @@ def validate(root):
     index=payloads['events-index.json']
     require(len(index)==manifest['event_count'] and len({e['id'] for e in index})==len(index), 'Event count/duplicate ID mismatch')
     for item in index:
+        require(isinstance(item['id'],str) and re.fullmatch('[1-9][0-9]*',item['id']), 'Invalid event ID')
         require(set(item)==INDEX_KEYS, 'Unexpected index field')
         event=payloads[f'events/{item["id"]}.json']
         require(set(event)==EVENT_KEYS, 'Unexpected event field')
+        require(event['purpose_type'] in {'stated','inferred','undisclosed'}, 'Invalid purpose type')
+        require(event['company_ids'] and len(set(event['company_ids']))==len(event['company_ids']), 'Duplicate/empty company references')
         require(event['category'] in CATEGORIES and set(event['company_ids'])<=company_ids, 'Invalid category/company')
         require(event['progress'] and set(event['tags'])<=CATEGORIES and event['category'] not in event['tags'], 'Invalid progress/tags')
         for key in INDEX_KEYS-{'years'}:require(event[key]==item[key], 'Index differs from detail')
@@ -85,8 +88,11 @@ def validate(root):
                 require(date.fromisoformat(p['event_date'])<=cutoff or p['planned'], 'Unmarked future stage')
             for s in p['sources']:
                 require(set(s)==SOURCE_KEYS and 0<len(s['excerpt'])<=800, 'Unexpected source field/excerpt')
+                if s['publication_date']:
+                    require(date.fromisoformat(s['publication_date'])<=cutoff, 'Source after data cutoff')
                 u=urlsplit(s['url'])
                 require(u.scheme in {'http','https'} and u.hostname and not u.username and not u.password, 'Unsafe source URL')
+                require(not any(k.lower() in {'token','access_token','api_key','apikey','password','secret','signature','x-amz-signature'} for k,v in parse_qsl(u.query)), 'Credential parameter in source URL')
     require(set(payloads)=={'companies.json','events-index.json','coverage.json','redirects.json'}|{f'events/{e["id"]}.json' for e in index}, 'Orphan data/detail file')
     require({'summary','complete','schema_version'} <= set(payloads['coverage.json']) <= {'summary','complete','schema_version','reviewed_at'} and payloads['coverage.json']['complete'] is False, 'Invalid coverage fields')
     if payloads['coverage.json'].get('reviewed_at'):

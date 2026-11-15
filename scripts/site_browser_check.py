@@ -24,9 +24,11 @@ def check(url):
         page.get_by_role('button',name='应用筛选').click()
         page.get_by_role('heading',name='暂无符合条件的事件').wait_for()
         page.goto(base+'events.html?period=all&view=table');page.locator('#footer a').first.wait_for()
+        detail_path=None
         if manifest['event_count']:
             page.locator('.event-table tbody tr').first.locator('td').nth(1).locator('a').first.click()
             page.get_by_role('heading',name='阶段与进展').wait_for()
+            detail_path=page.url.removeprefix(base)
             assert page.locator('.source-card').count()>0
             page.reload();page.get_by_role('heading',name='事实摘要',exact=True).wait_for()
             page.get_by_role('link',name='返回事件库').click()
@@ -35,7 +37,7 @@ def check(url):
         page.get_by_role('heading',name='记录不存在或已撤回').wait_for()
         for width in [360,390,1440]:
             page.set_viewport_size({'width':width,'height':900})
-            for path in ['', 'events.html?period=all','companies.html','about.html']:
+            for path in ['', 'events.html?period=all','companies.html','about.html']+([detail_path] if detail_path else []):
                 page.goto(base+path);page.locator('#footer a').first.wait_for()
                 assert not page.locator('[role=alert]').count()
                 assert page.evaluate('document.documentElement.scrollWidth<=innerWidth'),(width,path)
