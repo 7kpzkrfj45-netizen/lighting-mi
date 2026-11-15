@@ -1,0 +1,45 @@
+{
+  "category": "M&A",
+  "company_ids": [
+    "fagerhult"
+  ],
+  "id": "11",
+  "impact": "",
+  "impact_basis": "",
+  "latest_disclosure_date": "2021-04-08",
+  "latest_stage": "增持完成",
+  "participants": [
+    {
+      "company_id": "fagerhult",
+      "name": "Fagerhult",
+      "role": ""
+    }
+  ],
+  "progress": [
+    {
+      "date_precision": "day",
+      "disclosure_date": "2021-04-08",
+      "event_date": "2021-04-08",
+      "event_date_raw": "",
+      "fact": "集团收购 Seneco 剩余 80% 股份。",
+      "id": "14",
+      "planned": false,
+      "sources": [
+        {
+          "excerpt": "has acquired the remaining 80% shares in Seneco A/S.",
+          "locator": "原文短摘录；未提供段落或页码定位",
+          "publication_date": "2021-04-08",
+          "publisher": "Fagerhult 官网",
+          "title": "Fagerhult Group acquires Seneco A/S",
+          "url": "https://www.fagerhultgroup.com/news/newsroom/2021/fagerhult-group-acquires-seneco-as-to-strengthen-connectivity-offering/"
+        }
+      ],
+      "stage": "增持完成"
+    }
+  ],
+  "purpose": "",
+  "purpose_type": "undisclosed",
+  "summary": "Fagerhult 于 2021 年 4 月 8 日完成收购 Seneco 剩余 80% 股权，将原有 20% 参股提升为全资持有，增强室外照明连接控制能力。",
+  "tags": [],
+  "title": "Fagerhult 收购 Seneco 剩余 80% 股权"
+}

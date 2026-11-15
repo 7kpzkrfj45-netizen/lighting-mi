@@ -1,0 +1,45 @@
+{
+  "category": "Partnership",
+  "company_ids": [
+    "unilumin"
+  ],
+  "id": "25",
+  "impact": "",
+  "impact_basis": "",
+  "latest_disclosure_date": "2025-02-19",
+  "latest_stage": "合作签署",
+  "participants": [
+    {
+      "company_id": "unilumin",
+      "name": "洲明科技",
+      "role": ""
+    }
+  ],
+  "progress": [
+    {
+      "date_precision": "day",
+      "disclosure_date": "2025-02-19",
+      "event_date": "2025-02-11",
+      "event_date_raw": "",
+      "fact": "官网披露 2 月 11 日达成合作，内容包括体育城照明方案。",
+      "id": "30",
+      "planned": false,
+      "sources": [
+        {
+          "excerpt": "2025年2月11日",
+          "locator": "原文短摘录；未提供段落或页码定位",
+          "publication_date": "2025-02-19",
+          "publisher": "洲明体育官网",
+          "title": "洲明科技×马德里竞技：智慧照明引领未来体育城升级",
+          "url": "https://www.uniluminsports.cn/news/243.html"
+        }
+      ],
+      "stage": "合作签署"
+    }
+  ],
+  "purpose": "",
+  "purpose_type": "undisclosed",
+  "summary": "洲明体育官网于 2025 年 2 月 19 日披露，洲明科技于 2 月 11 日与马德里竞技达成官方照明合作，为体育城提供定制照明方案。",
+  "tags": [],
+  "title": "洲明科技与马德里竞技合作体育城照明"
+}

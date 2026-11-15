@@ -1,0 +1,71 @@
+{
+  "category": "M&A",
+  "company_ids": [
+    "signify",
+    "ams-osram"
+  ],
+  "id": "3",
+  "impact": "",
+  "impact_basis": "",
+  "latest_disclosure_date": "2022-05-02",
+  "latest_stage": "收购完成",
+  "participants": [
+    {
+      "company_id": "signify",
+      "name": "Signify",
+      "role": ""
+    },
+    {
+      "company_id": "ams-osram",
+      "name": "ams OSRAM",
+      "role": ""
+    }
+  ],
+  "progress": [
+    {
+      "date_precision": "day",
+      "disclosure_date": "2022-05-02",
+      "event_date": "2022-05-02",
+      "event_date_raw": "",
+      "fact": "Signify 宣布已完成向 ams OSRAM 收购 Fluence。",
+      "id": "4",
+      "planned": false,
+      "sources": [
+        {
+          "excerpt": "the acquisition of Fluence from ams OSRAM",
+          "locator": "原文短摘录；未提供段落或页码定位",
+          "publication_date": "2022-05-02",
+          "publisher": "Signify 官方公告",
+          "title": "Signify successfully completes acquisition of Fluence",
+          "url": "https://www.assets.signify.com/is/content/Signify/Assets/signify/global/news/2022/20220502-signify-successfully-completes-acquisition-of-fluence.pdf"
+        }
+      ],
+      "stage": "收购完成"
+    },
+    {
+      "date_precision": "day",
+      "disclosure_date": "2021-12-20",
+      "event_date": "2021-12-20",
+      "event_date_raw": "",
+      "fact": "Signify 宣布收购 Fluence，拟交易金额 2.72 亿美元；签约阶段仍需完成交割。",
+      "id": "3",
+      "planned": false,
+      "sources": [
+        {
+          "excerpt": "entered into a definitive agreement with ams OSRAM (SIX: AMS) to acquire Austin, Texas-",
+          "locator": "原文短摘录；未提供段落或页码定位",
+          "publication_date": "2021-12-20",
+          "publisher": "Signify 官方公告",
+          "title": "Signify to acquire Fluence",
+          "url": "https://www.assets.signify.com/is/content/Signify/Assets/signify/global/20211220-signify-to-acquire-fluence-to-strengthen-agriculture-growth--platform.pdf"
+        }
+      ],
+      "stage": "宣布签约"
+    }
+  ],
+  "purpose": "",
+  "purpose_type": "undisclosed",
+  "summary": "2021 年 12 月宣布收购 Fluence，2022 年 5 月完成。该公司提供植物照明，与同名水处理公司及储能公司无关。",
+  "tags": [],
+  "title": "Signify 向 ams OSRAM 收购植物照明企业 Fluence"
+}

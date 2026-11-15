@@ -1,0 +1,45 @@
+{
+  "category": "M&A",
+  "company_ids": [
+    "signify"
+  ],
+  "id": "2",
+  "impact": "",
+  "impact_basis": "",
+  "latest_disclosure_date": "2021-07-01",
+  "latest_stage": "收购完成",
+  "participants": [
+    {
+      "company_id": "signify",
+      "name": "Signify",
+      "role": ""
+    }
+  ],
+  "progress": [
+    {
+      "date_precision": "day",
+      "disclosure_date": "2021-07-01",
+      "event_date": "2021-07-01",
+      "event_date_raw": "",
+      "fact": "Signify 宣布已收购 Telensa Holdings Ltd。",
+      "id": "2",
+      "planned": false,
+      "sources": [
+        {
+          "excerpt": "announces today that it acquired Telensa Holdings Ltd",
+          "locator": "原文短摘录；未提供段落或页码定位",
+          "publication_date": "2021-07-01",
+          "publisher": "Signify 官网",
+          "title": "Signify expands offering for smart cities by acquiring Telensa",
+          "url": "https://www.signify.com/global/our-company/news/press-releases/2021/20210701-signify-expands-offering-for-smart-cities-by-acquiring-telensa"
+        }
+      ],
+      "stage": "收购完成"
+    }
+  ],
+  "purpose": "",
+  "purpose_type": "undisclosed",
+  "summary": "Signify 于 2021 年 7 月 1 日宣布已收购英国 Telensa Holdings，扩展无线监测和智能路灯控制能力。",
+  "tags": [],
+  "title": "Signify 收购智能路灯控制企业 Telensa"
+}

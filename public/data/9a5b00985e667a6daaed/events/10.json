@@ -1,0 +1,45 @@
+{
+  "category": "M&A",
+  "company_ids": [
+    "ams-osram"
+  ],
+  "id": "10",
+  "impact": "",
+  "impact_basis": "",
+  "latest_disclosure_date": "2022-05-10",
+  "latest_stage": "出售协议",
+  "participants": [
+    {
+      "company_id": "ams-osram",
+      "name": "ams OSRAM",
+      "role": ""
+    }
+  ],
+  "progress": [
+    {
+      "date_precision": "day",
+      "disclosure_date": "2022-05-10",
+      "event_date": "2022-05-10",
+      "event_date_raw": "",
+      "fact": "宣布出售 Traxon Technologies 及 e:cue 动态照明控制业务。",
+      "id": "13",
+      "planned": false,
+      "sources": [
+        {
+          "excerpt": "将包括其居世界领先地位动态照明控制业务e:cue在内的Traxon Technologies业务出售给Prosperity Group",
+          "locator": "原文短摘录；未提供段落或页码定位",
+          "publication_date": "2022-05-10",
+          "publisher": "ams OSRAM 官方新闻室",
+          "title": "Sale of Traxon Technologies",
+          "url": "https://ams-osram.cn/news/press-releases/sale_traxon"
+        }
+      ],
+      "stage": "出售协议"
+    }
+  ],
+  "purpose": "",
+  "purpose_type": "undisclosed",
+  "summary": "2022 年 5 月 ams OSRAM 宣布与佑昌集团达成出售 Traxon 的协议。后续财报显示该业务 12 月出售；原始完成披露日期仍待追查。",
+  "tags": [],
+  "title": "ams OSRAM 出售 Traxon 与 e:cue 动态照明业务"
+}

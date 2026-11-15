@@ -1,0 +1,45 @@
+{
+  "category": "Manufacturing",
+  "company_ids": [
+    "upshine"
+  ],
+  "id": "23",
+  "impact": "",
+  "impact_basis": "",
+  "latest_disclosure_date": "2025-01-17",
+  "latest_stage": "增资批准",
+  "participants": [
+    {
+      "company_id": "upshine",
+      "name": "民爆光电",
+      "role": ""
+    }
+  ],
+  "progress": [
+    {
+      "date_precision": "day",
+      "disclosure_date": "2025-01-17",
+      "event_date": "2025-01-17",
+      "event_date_raw": "",
+      "fact": "批准向惠州子公司增资，以实施工业及特种照明基地。",
+      "id": "28",
+      "planned": false,
+      "sources": [
+        {
+          "excerpt": "LED 工业照明及特种照明灯",
+          "locator": "原文短摘录；未提供段落或页码定位",
+          "publication_date": "2025-01-17",
+          "publisher": "深交所·民爆光电公告",
+          "title": "民爆光电使用募集资金向全资子公司增资公告",
+          "url": "https://disc.static.szse.cn/disc/disk03/finalpage/2025-01-17/98fef8ac-7d6b-4b1a-b1dd-5f649d664d04.PDF"
+        }
+      ],
+      "stage": "增资批准"
+    }
+  ],
+  "purpose": "",
+  "purpose_type": "undisclosed",
+  "summary": "同一董事会批准向惠州民爆增资 34,361.77 万元，以实施 LED 工业及特种照明灯具生产基地项目；与越南基地为不同项目。",
+  "tags": [],
+  "title": "民爆光电增资推进惠州工业及特种照明基地"
+}

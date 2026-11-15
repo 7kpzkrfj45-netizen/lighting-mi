@@ -1,0 +1,45 @@
+{
+  "category": "M&A",
+  "company_ids": [
+    "ams-osram"
+  ],
+  "id": "9",
+  "impact": "",
+  "impact_basis": "",
+  "latest_disclosure_date": "2023-03-01",
+  "latest_stage": "交易完成",
+  "participants": [
+    {
+      "company_id": "ams-osram",
+      "name": "ams OSRAM",
+      "role": ""
+    }
+  ],
+  "progress": [
+    {
+      "date_precision": "day",
+      "disclosure_date": "2023-03-01",
+      "event_date": "2023-03-01",
+      "event_date_raw": "",
+      "fact": "Clay Paky 娱乐照明业务出售给 ARRI AG 完成。",
+      "id": "12",
+      "planned": false,
+      "sources": [
+        {
+          "excerpt": "the sale of Clay Paky entertainment lighting business has been completed with ARRI AG.",
+          "locator": "原文短摘录；未提供段落或页码定位",
+          "publication_date": "2023-03-01",
+          "publisher": "ams OSRAM 官方新闻室",
+          "title": "Clay Paky sale to ARRI closes",
+          "url": "https://ams-osram.cn/news/press-releases/closing-clay-paky"
+        }
+      ],
+      "stage": "交易完成"
+    }
+  ],
+  "purpose": "",
+  "purpose_type": "undisclosed",
+  "summary": "ams OSRAM 于 2023 年 3 月 1 日确认向 ARRI 出售 Clay Paky 娱乐照明业务完成。",
+  "tags": [],
+  "title": "ams OSRAM 向 ARRI 出售 Clay Paky 娱乐照明业务"
+}

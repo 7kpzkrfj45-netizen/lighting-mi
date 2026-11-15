@@ -1,0 +1,45 @@
+{
+  "category": "Manufacturing",
+  "company_ids": [
+    "signify"
+  ],
+  "id": "5",
+  "impact": "",
+  "impact_basis": "",
+  "latest_disclosure_date": "2023-08-16",
+  "latest_stage": "开业披露",
+  "participants": [
+    {
+      "company_id": "signify",
+      "name": "Signify",
+      "role": ""
+    }
+  ],
+  "progress": [
+    {
+      "date_precision": "day",
+      "disclosure_date": "2023-08-16",
+      "event_date": "2023-08-16",
+      "event_date_raw": "",
+      "fact": "九江工厂开业；公告中的 192 条产线和年底全面运行属于规划描述。",
+      "id": "7",
+      "planned": false,
+      "sources": [
+        {
+          "excerpt": "today announced the opening of its biggest LED lighting manufacturing site",
+          "locator": "原文短摘录；未提供段落或页码定位",
+          "publication_date": "2023-08-16",
+          "publisher": "Signify 官方公告",
+          "title": "Signify opens new factory for light sources and luminaires in China",
+          "url": "https://www.assets.signify.com/is/content/Signify/Assets/signify/global/news/2023/20230816-signify-opens-new-factory-for-light-sources-and-luminaires-in-china-its-biggest-in-the-world.pdf"
+        }
+      ],
+      "stage": "开业披露"
+    }
+  ],
+  "purpose": "",
+  "purpose_type": "undisclosed",
+  "summary": "Signify 于 2023 年 8 月披露凯耀九江新工厂开业，面向中国及全球生产 LED 光源和灯具。公告预计年底全面运行，不能据此断言全部产线当日达产。",
+  "tags": [],
+  "title": "Signify 宣布九江 LED 照明制造基地开业"
+}

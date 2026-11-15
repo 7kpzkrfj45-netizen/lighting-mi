@@ -1,0 +1,45 @@
+{
+  "category": "M&A",
+  "company_ids": [
+    "signify"
+  ],
+  "id": "1",
+  "impact": "",
+  "impact_basis": "",
+  "latest_disclosure_date": "2020-03-02",
+  "latest_stage": "收购完成",
+  "participants": [
+    {
+      "company_id": "signify",
+      "name": "Signify",
+      "role": ""
+    }
+  ],
+  "progress": [
+    {
+      "date_precision": "day",
+      "disclosure_date": "2020-03-02",
+      "event_date": "2020-03-02",
+      "event_date_raw": "",
+      "fact": "Signify 完成收购 Cooper Lighting Solutions；保留 2020 年完成阶段。",
+      "id": "1",
+      "planned": false,
+      "sources": [
+        {
+          "excerpt": "has completed the acquisition of Cooper Lighting Solutions from Eaton.",
+          "locator": "原文短摘录；未提供段落或页码定位",
+          "publication_date": "2020-03-02",
+          "publisher": "Signify 官网",
+          "title": "Signify successfully completes acquisition of Cooper Lighting Solutions",
+          "url": "https://www.signify.com/global/our-company/news/press-releases/2020/20200302-signify-successfully-completes-acquisition-of-cooper-lighting-solutions"
+        }
+      ],
+      "stage": "收购完成"
+    }
+  ],
+  "purpose": "",
+  "purpose_type": "undisclosed",
+  "summary": "2020 年 3 月 2 日，Signify 宣布完成向 Eaton 收购 Cooper Lighting Solutions，交易现金及债务净额口径为 14 亿美元。最初宣布发生于 2019 年，不纳入本次回填窗口。",
+  "tags": [],
+  "title": "Signify 完成收购 Cooper Lighting Solutions"
+}

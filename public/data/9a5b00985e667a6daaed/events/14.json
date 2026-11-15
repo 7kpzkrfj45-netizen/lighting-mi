@@ -1,0 +1,45 @@
+{
+  "category": "Partnership",
+  "company_ids": [
+    "zumtobel"
+  ],
+  "id": "14",
+  "impact": "",
+  "impact_basis": "",
+  "latest_disclosure_date": "2024-02-29",
+  "latest_stage": "合作宣布",
+  "participants": [
+    {
+      "company_id": "zumtobel",
+      "name": "Zumtobel",
+      "role": ""
+    }
+  ],
+  "progress": [
+    {
+      "date_precision": "day",
+      "disclosure_date": "2024-02-29",
+      "event_date": "2024-02-29",
+      "event_date_raw": "",
+      "fact": "Siemens 和 Enlighted 宣布与 Zumtobel Group 建立战略合作。",
+      "id": "19",
+      "planned": false,
+      "sources": [
+        {
+          "excerpt": "announce a strategic partnership with Zumtobel Group",
+          "locator": "原文短摘录；未提供段落或页码定位",
+          "publication_date": "2024-02-29",
+          "publisher": "Siemens 官方新闻室",
+          "title": "Siemens, Enlighted and Zumtobel partner on smart buildings",
+          "url": "https://press.siemens.com/global/en/pressrelease/siemens-enlighted-and-zumtobel-group-partner-advance-smart-building-solutions"
+        }
+      ],
+      "stage": "合作宣布"
+    }
+  ],
+  "purpose": "",
+  "purpose_type": "undisclosed",
+  "summary": "2024 年 2 月 29 日宣布生态合作，将 Enlighted 智能传感器与 Zumtobel、Thorn 照明产品整合，面向智能建筑应用。",
+  "tags": [],
+  "title": "Zumtobel 与 Siemens、Enlighted 合作智能建筑照明"
+}

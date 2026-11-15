@@ -1,0 +1,45 @@
+{
+  "category": "Manufacturing",
+  "company_ids": [
+    "snc"
+  ],
+  "id": "21",
+  "impact": "",
+  "impact_basis": "",
+  "latest_disclosure_date": "2025-03-05",
+  "latest_stage": "募投变更及增资披露",
+  "participants": [
+    {
+      "company_id": "snc",
+      "name": "联域股份",
+      "role": ""
+    }
+  ],
+  "progress": [
+    {
+      "date_precision": "unknown",
+      "disclosure_date": "2025-03-05",
+      "event_date": null,
+      "event_date_raw": "2024-10-21 董事会；2024-11-07 股东会",
+      "fact": "2025 年公告确认已批准将募集资金用于越南照明生产基地，并通过香港子公司向越南新能源增资。",
+      "id": "26",
+      "planned": false,
+      "sources": [
+        {
+          "excerpt": "智能照明越南生产基地建设项目",
+          "locator": "原文短摘录；未提供段落或页码定位",
+          "publication_date": "2025-03-05",
+          "publisher": "巨潮资讯·联域股份公告",
+          "title": "联域股份关于使用募集资金增资实施募投项目的公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2025-03-05/1222705988.PDF"
+        }
+      ],
+      "stage": "募投变更及增资披露"
+    }
+  ],
+  "purpose": "",
+  "purpose_type": "undisclosed",
+  "summary": "联域股份将部分原总部基地募集资金及超募资金投入越南智能照明生产基地；2025 年公告再次确认 2024 年董事会和股东会批准。",
+  "tags": [],
+  "title": "联域股份投资智能照明越南生产基地"
+}

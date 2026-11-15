@@ -1,0 +1,45 @@
+{
+  "category": "Partnership",
+  "company_ids": [
+    "signify"
+  ],
+  "id": "6",
+  "impact": "",
+  "impact_basis": "",
+  "latest_disclosure_date": "2024-07-03",
+  "latest_stage": "合作宣布",
+  "participants": [
+    {
+      "company_id": "signify",
+      "name": "Signify",
+      "role": ""
+    }
+  ],
+  "progress": [
+    {
+      "date_precision": "day",
+      "disclosure_date": "2024-07-03",
+      "event_date": "2024-07-03",
+      "event_date_raw": "",
+      "fact": "Signify 宣布与 Mercedes-AMG PETRONAS F1 Team 建立合作。",
+      "id": "8",
+      "planned": false,
+      "sources": [
+        {
+          "excerpt": "today announces a new partnership with the Mercedes-AMG PETRONAS F1 Team.",
+          "locator": "原文短摘录；未提供段落或页码定位",
+          "publication_date": "2024-07-03",
+          "publisher": "Signify 官网",
+          "title": "Signify and Mercedes-AMG PETRONAS Formula 1 Team launch new partnership",
+          "url": "https://www.signify.com/en-gb/our-company/news/press-releases/2024/20240703-signify-and-mercedes-amg-petronas-f1-team-launch-new-partnership"
+        }
+      ],
+      "stage": "合作宣布"
+    }
+  ],
+  "purpose": "",
+  "purpose_type": "undisclosed",
+  "summary": "2024 年 7 月 3 日双方宣布合作，内容包括以照明改善车队工作环境、表现及观赛体验。",
+  "tags": [],
+  "title": "Signify 与梅赛德斯 F1 车队开展照明合作"
+}

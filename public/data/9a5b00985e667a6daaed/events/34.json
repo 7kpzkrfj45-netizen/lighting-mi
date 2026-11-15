@@ -1,0 +1,45 @@
+{
+  "category": "M&A",
+  "company_ids": [
+    "mls"
+  ],
+  "id": "34",
+  "impact": "",
+  "impact_basis": "",
+  "latest_disclosure_date": "2025-01-30",
+  "latest_stage": "官网披露收购",
+  "participants": [
+    {
+      "company_id": "mls",
+      "name": "木林森（通过间接全资子公司 LEDVANCE）",
+      "role": ""
+    }
+  ],
+  "progress": [
+    {
+      "date_precision": "unknown",
+      "disclosure_date": "2025-01-30",
+      "event_date": null,
+      "event_date_raw": "2025 年 1 月；财报购买日 01-16、新闻稿署地日期 01-17",
+      "fact": "LEDVANCE 宣布收购德国照明企业 loblicht。",
+      "id": "40",
+      "planned": false,
+      "sources": [
+        {
+          "excerpt": "announce the acquisition of loblicht",
+          "locator": "原文短摘录；未提供段落或页码定位",
+          "publication_date": "2025-01-30",
+          "publisher": "LEDVANCE 官方新闻室",
+          "title": "LEDVANCE announces acquisition of loblicht",
+          "url": "https://www.ledvance.de/ledvance.com/professional/company/newsroom/press-releases/2025/ledvance-expands-brand-portfolio-with-acquisition-of-german-lighting-company-loblicht-n365774"
+        }
+      ],
+      "stage": "官网披露收购"
+    }
+  ],
+  "purpose": "",
+  "purpose_type": "undisclosed",
+  "summary": "LEDVANCE 官网披露收购德国专业照明企业 loblicht。木林森财报亦列示该收购及子公司归属；页面发表日与正文日期不同，分别保留。",
+  "tags": [],
+  "title": "木林森旗下 LEDVANCE 收购德国 loblicht"
+}

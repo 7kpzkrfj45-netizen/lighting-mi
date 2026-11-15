@@ -1,0 +1,45 @@
+{
+  "category": "M&A",
+  "company_ids": [
+    "ams-osram"
+  ],
+  "id": "8",
+  "impact": "",
+  "impact_basis": "",
+  "latest_disclosure_date": "2023-04-04",
+  "latest_stage": "交易完成",
+  "participants": [
+    {
+      "company_id": "ams-osram",
+      "name": "ams OSRAM",
+      "role": ""
+    }
+  ],
+  "progress": [
+    {
+      "date_precision": "day",
+      "disclosure_date": "2023-04-04",
+      "event_date": "2023-04-04",
+      "event_date_raw": "",
+      "fact": "欧洲及亚洲 Digital Systems 业务出售给 Inventronics 完成。",
+      "id": "11",
+      "planned": false,
+      "sources": [
+        {
+          "excerpt": "the disposal of the Digital Systems business in Europe and Asia to Inventronics",
+          "locator": "原文短摘录；未提供段落或页码定位",
+          "publication_date": "2023-04-04",
+          "publisher": "ams OSRAM 官网",
+          "title": "Digital Systems Europe and Asia sale closes",
+          "url": "https://ams-osram.com/news/press-releases/closing-sale-ds"
+        }
+      ],
+      "stage": "交易完成"
+    }
+  ],
+  "purpose": "",
+  "purpose_type": "undisclosed",
+  "summary": "2023 年 4 月 4 日，ams OSRAM 宣布向 Inventronics 出售欧洲与亚洲 Digital Systems 业务完成；这是独立于北美 Acuity 交易的标的范围。",
+  "tags": [],
+  "title": "ams OSRAM 完成出售欧洲及亚洲 Digital Systems 业务"
+}

@@ -1,0 +1,154 @@
+[
+  {
+    "aliases": [
+      "佛山照明"
+    ],
+    "group": "China",
+    "id": "fsl",
+    "name": "佛山照明"
+  },
+  {
+    "aliases": [
+      "联域股份"
+    ],
+    "group": "China",
+    "id": "snc",
+    "name": "联域股份"
+  },
+  {
+    "aliases": [
+      "木林森"
+    ],
+    "group": "China",
+    "id": "mls",
+    "name": "木林森"
+  },
+  {
+    "aliases": [
+      "洲明科技"
+    ],
+    "group": "China",
+    "id": "unilumin",
+    "name": "洲明科技"
+  },
+  {
+    "aliases": [
+      "三雄极光"
+    ],
+    "group": "China",
+    "id": "pak",
+    "name": "三雄极光"
+  },
+  {
+    "aliases": [
+      "民爆光电"
+    ],
+    "group": "China",
+    "id": "upshine",
+    "name": "民爆光电"
+  },
+  {
+    "aliases": [
+      "阳光照明"
+    ],
+    "group": "China",
+    "id": "yankon",
+    "name": "阳光照明"
+  },
+  {
+    "aliases": [
+      "得邦照明"
+    ],
+    "group": "China",
+    "id": "tospo",
+    "name": "得邦照明"
+  },
+  {
+    "aliases": [
+      "欧普照明"
+    ],
+    "group": "China",
+    "id": "opple",
+    "name": "欧普照明"
+  },
+  {
+    "aliases": [
+      "立达信"
+    ],
+    "group": "China",
+    "id": "leedarson",
+    "name": "立达信"
+  },
+  {
+    "aliases": [
+      "海洋王"
+    ],
+    "group": "China",
+    "id": "ocean",
+    "name": "海洋王"
+  },
+  {
+    "aliases": [
+      "雷士照明"
+    ],
+    "group": "China",
+    "id": "nvc",
+    "name": "雷士照明"
+  },
+  {
+    "aliases": [
+      "Signify"
+    ],
+    "group": "International",
+    "id": "signify",
+    "name": "Signify"
+  },
+  {
+    "aliases": [
+      "Cree Lighting"
+    ],
+    "group": "International",
+    "id": "cree-lighting",
+    "name": "Cree Lighting"
+  },
+  {
+    "aliases": [
+      "Acuity"
+    ],
+    "group": "International",
+    "id": "acuity",
+    "name": "Acuity"
+  },
+  {
+    "aliases": [
+      "Zumtobel"
+    ],
+    "group": "International",
+    "id": "zumtobel",
+    "name": "Zumtobel"
+  },
+  {
+    "aliases": [
+      "Fagerhult"
+    ],
+    "group": "International",
+    "id": "fagerhult",
+    "name": "Fagerhult"
+  },
+  {
+    "aliases": [
+      "Glamox"
+    ],
+    "group": "International",
+    "id": "glamox",
+    "name": "Glamox"
+  },
+  {
+    "aliases": [
+      "ams OSRAM"
+    ],
+    "group": "International",
+    "id": "ams-osram",
+    "name": "ams OSRAM"
+  }
+]

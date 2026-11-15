@@ -1,0 +1,65 @@
+{
+  "category": "M&A",
+  "company_ids": [
+    "fagerhult"
+  ],
+  "id": "12",
+  "impact": "",
+  "impact_basis": "",
+  "latest_disclosure_date": "2025-07-02",
+  "latest_stage": "收购完成",
+  "participants": [
+    {
+      "company_id": "fagerhult",
+      "name": "Fagerhult",
+      "role": ""
+    }
+  ],
+  "progress": [
+    {
+      "date_precision": "day",
+      "disclosure_date": "2025-07-02",
+      "event_date": "2025-07-02",
+      "event_date_raw": "",
+      "fact": "完成全部股份收购，已取得法国监管批准。",
+      "id": "16",
+      "planned": false,
+      "sources": [
+        {
+          "excerpt": "Fagerhult Group has completed the acquisition of 100 percent of the shares in Trato SAS",
+          "locator": "原文短摘录；未提供段落或页码定位",
+          "publication_date": "2025-07-02",
+          "publisher": "Fagerhult 官网",
+          "title": "Acquisition of Trato TLV Group completed",
+          "url": "https://www.fagerhultgroup.com/news/newsroom/2025/fagerhult-group-completes-the-acquisition-of-trato-tlv-group/"
+        }
+      ],
+      "stage": "收购完成"
+    },
+    {
+      "date_precision": "day",
+      "disclosure_date": "2025-04-04",
+      "event_date": "2025-04-04",
+      "event_date_raw": "",
+      "fact": "签署收购 Trato SAS 及子公司全部股份的协议。",
+      "id": "15",
+      "planned": false,
+      "sources": [
+        {
+          "excerpt": "Fagerhult Group has signed an agreement to acquire 100% of the shares in Trato SAS",
+          "locator": "原文短摘录；未提供段落或页码定位",
+          "publication_date": "2025-04-04",
+          "publisher": "Fagerhult 官网",
+          "title": "Agreement to acquire Trato TLV Group",
+          "url": "https://www.fagerhultgroup.com/news/newsroom/2025/fagerhult-group-signs-an-agreement-to-acquire-the-trato-tlv-group/"
+        }
+      ],
+      "stage": "签约"
+    }
+  ],
+  "purpose": "",
+  "purpose_type": "undisclosed",
+  "summary": "2025 年 4 月签约收购 Trato TLV Group，7 月 2 日宣布完成。业务涉及专业照明和医疗设备，收录说明照明相关部分。",
+  "tags": [],
+  "title": "Fagerhult 收购法国 Trato TLV Group"
+}

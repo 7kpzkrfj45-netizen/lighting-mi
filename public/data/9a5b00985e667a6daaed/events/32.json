@@ -1,0 +1,45 @@
+{
+  "category": "Manufacturing",
+  "company_ids": [
+    "yankon"
+  ],
+  "id": "32",
+  "impact": "",
+  "impact_basis": "",
+  "latest_disclosure_date": "2025-04-22",
+  "latest_stage": "财报披露制造基地建设与出口",
+  "participants": [
+    {
+      "company_id": "yankon",
+      "name": "阳光照明",
+      "role": ""
+    }
+  ],
+  "progress": [
+    {
+      "date_precision": "unknown",
+      "disclosure_date": "2025-04-22",
+      "event_date": null,
+      "event_date_raw": "2024-02 投资批复；2024-03 租赁；2024-06 开工；出口起始具体日未披露",
+      "fact": "报告记载泰国公司的投资批复、租赁、开工及 2024 年出口业务。",
+      "id": "37",
+      "planned": false,
+      "sources": [
+        {
+          "excerpt": "阳光照明（泰国）有限公司",
+          "locator": "原文短摘录；未提供段落或页码定位",
+          "publication_date": "2025-04-22",
+          "publisher": "阳光照明 · 官方入口",
+          "title": "阳光照明2024年年度报告",
+          "url": "https://www.yankon.com/Upload/file/202505/20250526132740_3943.pdf"
+        }
+      ],
+      "stage": "财报披露制造基地建设与出口"
+    }
+  ],
+  "purpose": "",
+  "purpose_type": "undisclosed",
+  "summary": "2024 年报披露公司于 2024 年 2 月获得泰国投资批复，3 月完成厂房租赁、6 月开工，2024 年已开始向美国出口灯具。与越南合作供货项目分开。",
+  "tags": [],
+  "title": "阳光照明建立泰国照明生产基地"
+}

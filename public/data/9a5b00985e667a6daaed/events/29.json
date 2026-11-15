@@ -1,0 +1,45 @@
+{
+  "category": "Supply Chain Resilience",
+  "company_ids": [
+    "yankon"
+  ],
+  "id": "29",
+  "impact": "",
+  "impact_basis": "",
+  "latest_disclosure_date": "2025-04-22",
+  "latest_stage": "财报确认供应链合作",
+  "participants": [
+    {
+      "company_id": "yankon",
+      "name": "阳光照明",
+      "role": ""
+    }
+  ],
+  "progress": [
+    {
+      "date_precision": "unknown",
+      "disclosure_date": "2025-04-22",
+      "event_date": null,
+      "event_date_raw": "2024 年",
+      "fact": "2024 年报确认与越南照明合作方签订独家出口美国合作协议。",
+      "id": "34",
+      "planned": false,
+      "sources": [
+        {
+          "excerpt": "公司与越南照明公司合作方签订了独家出口美国的合作协",
+          "locator": "原文短摘录；未提供段落或页码定位",
+          "publication_date": "2025-04-22",
+          "publisher": "阳光照明 · 官方入口",
+          "title": "阳光照明2024年年度报告",
+          "url": "https://www.yankon.com/Upload/file/202505/20250526132740_3943.pdf"
+        }
+      ],
+      "stage": "财报确认供应链合作"
+    }
+  ],
+  "purpose": "",
+  "purpose_type": "undisclosed",
+  "summary": "2024 年报确认阳光照明与越南照明合作方签订独家出口美国合作协议。该业务是合作供货安排，不是公司自有越南工厂。",
+  "tags": [],
+  "title": "阳光照明通过越南合作方供应美国灯具"
+}

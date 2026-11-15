@@ -1,0 +1,11 @@
+.env
+.env.*
+*.sqlite3
+*.dump
+*.pem
+*.key
+*.p12
+*.pfx
+node_modules/
+__pycache__/
+.DS_Store

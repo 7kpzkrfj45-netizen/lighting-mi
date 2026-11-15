@@ -1,0 +1,71 @@
+{
+  "category": "M&A",
+  "company_ids": [
+    "acuity",
+    "ams-osram"
+  ],
+  "id": "7",
+  "impact": "",
+  "impact_basis": "",
+  "latest_disclosure_date": "2021-07-01",
+  "latest_stage": "交易完成",
+  "participants": [
+    {
+      "company_id": "acuity",
+      "name": "Acuity",
+      "role": ""
+    },
+    {
+      "company_id": "ams-osram",
+      "name": "ams OSRAM",
+      "role": ""
+    }
+  ],
+  "progress": [
+    {
+      "date_precision": "day",
+      "disclosure_date": "2021-07-01",
+      "event_date": "2021-07-01",
+      "event_date_raw": "",
+      "fact": "ams OSRAM 确认向 Acuity 出售北美 Digital Systems 业务已完成。",
+      "id": "10",
+      "planned": false,
+      "sources": [
+        {
+          "excerpt": "announces the close of the sale of the North America-based Digital Systems business",
+          "locator": "原文短摘录；未提供段落或页码定位",
+          "publication_date": "2021-07-01",
+          "publisher": "ams OSRAM 官网",
+          "title": "North America Digital Systems sale closes",
+          "url": "https://ams-osram.com/news/press-releases/ds_na_closing"
+        }
+      ],
+      "stage": "交易完成"
+    },
+    {
+      "date_precision": "day",
+      "disclosure_date": "2021-06-04",
+      "event_date": "2021-06-04",
+      "event_date_raw": "",
+      "fact": "Acuity 签署收购北美 Digital Systems 业务协议。",
+      "id": "9",
+      "planned": false,
+      "sources": [
+        {
+          "excerpt": "signed a definitive agreement to purchase ams OSRAM’s North American Digital Systems",
+          "locator": "原文短摘录；未提供段落或页码定位",
+          "publication_date": "2021-06-04",
+          "publisher": "Acuity 投资者官网",
+          "title": "Acuity Brands and ams OSRAM reach an agreement",
+          "url": "https://investors.acuityinc.com/news-releases/news-release-details/acuity-brands-and-ams-osram-reach-agreement-acuity-acquire-ams"
+        }
+      ],
+      "stage": "签约"
+    }
+  ],
+  "purpose": "",
+  "purpose_type": "undisclosed",
+  "summary": "2021 年 6 月签约、7 月完成。标的包括北美照明控制、电子和 LED 驱动业务，双方未披露交易金额。",
+  "tags": [],
+  "title": "Acuity 收购 ams OSRAM 北美 Digital Systems 业务"
+}

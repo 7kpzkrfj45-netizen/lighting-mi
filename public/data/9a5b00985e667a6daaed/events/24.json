@@ -1,0 +1,45 @@
+{
+  "category": "Manufacturing",
+  "company_ids": [
+    "opple"
+  ],
+  "id": "24",
+  "impact": "",
+  "impact_basis": "",
+  "latest_disclosure_date": "2024-08-02",
+  "latest_stage": "开工奠基",
+  "participants": [
+    {
+      "company_id": "opple",
+      "name": "欧普照明",
+      "role": ""
+    }
+  ],
+  "progress": [
+    {
+      "date_precision": "day",
+      "disclosure_date": "2024-08-02",
+      "event_date": "2024-07-30",
+      "event_date_raw": "",
+      "fact": "7 月 30 日举行开工奠基仪式，8 月 2 日由区政府公开披露。",
+      "id": "29",
+      "planned": false,
+      "sources": [
+        {
+          "excerpt": "7月30日，欧普照明精密智能制造基地项目举行开工奠基仪式。",
+          "locator": "原文短摘录；未提供段落或页码定位",
+          "publication_date": "2024-08-02",
+          "publisher": "苏州市吴江区政府",
+          "title": "欧普照明精密智能制造基地项目奠基",
+          "url": "https://www.wujiang.gov.cn/zgwj/wjxw/202408/5904661aae9e42ce85fafa93bb9dfe66.shtml"
+        }
+      ],
+      "stage": "开工奠基"
+    }
+  ],
+  "purpose": "",
+  "purpose_type": "undisclosed",
+  "summary": "吴江区政府于 2024 年 8 月 2 日披露，欧普照明精密智能制造基地于 7 月 30 日奠基。规划投资、建筑面积及未来产量属于项目计划。",
+  "tags": [],
+  "title": "欧普照明精密智能制造基地开工"
+}

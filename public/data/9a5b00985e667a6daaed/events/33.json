@@ -1,0 +1,65 @@
+{
+  "category": "M&A",
+  "company_ids": [
+    "mls"
+  ],
+  "id": "33",
+  "impact": "",
+  "impact_basis": "",
+  "latest_disclosure_date": "2026-01-05",
+  "latest_stage": "意向协议终止",
+  "participants": [
+    {
+      "company_id": "mls",
+      "name": "木林森",
+      "role": ""
+    }
+  ],
+  "progress": [
+    {
+      "date_precision": "unknown",
+      "disclosure_date": "2026-01-05",
+      "event_date": null,
+      "event_date_raw": "文件署期 2025-12-31；终止签署具体日未明确",
+      "fact": "各方在核心合作安排上未形成一致意见，终止合作意向协议。",
+      "id": "39",
+      "planned": false,
+      "sources": [
+        {
+          "excerpt": "一致同意终止",
+          "locator": "原文短摘录；未提供段落或页码定位",
+          "publication_date": "2026-01-05",
+          "publisher": "巨潮资讯·联域股份公告",
+          "title": "木林森终止合作意向协议书公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-01-05/1224912760.PDF"
+        }
+      ],
+      "stage": "意向协议终止"
+    },
+    {
+      "date_precision": "day",
+      "disclosure_date": "2025-01-04",
+      "event_date": "2025-01-03",
+      "event_date_raw": "",
+      "fact": "达成拟收购新航科技 51% 股权的初步意向，尚非正式完成交易。",
+      "id": "38",
+      "planned": false,
+      "sources": [
+        {
+          "excerpt": "广州市新航科技有限公司",
+          "locator": "原文短摘录；未提供段落或页码定位",
+          "publication_date": "2025-01-04",
+          "publisher": "深交所·民爆光电公告",
+          "title": "木林森签订合作意向协议书公告",
+          "url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2025-01-04/a292519e-4e8c-4c63-82be-2a4155000e49.PDF"
+        }
+      ],
+      "stage": "合作与收购意向"
+    }
+  ],
+  "purpose": "",
+  "purpose_type": "undisclosed",
+  "summary": "2025 年 1 月木林森与新航科技等签署意向协议，拟收购 51% 股权，涉及低空及航空照明。后因核心合作安排未达成一致而终止，不能显示为已完成收购。",
+  "tags": [],
+  "title": "木林森拟收购新航科技：意向协议后终止"
+}

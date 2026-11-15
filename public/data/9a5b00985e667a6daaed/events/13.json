@@ -1,0 +1,65 @@
+{
+  "category": "M&A",
+  "company_ids": [
+    "fagerhult"
+  ],
+  "id": "13",
+  "impact": "",
+  "impact_basis": "",
+  "latest_disclosure_date": "2026-02-17",
+  "latest_stage": "财报确认完成",
+  "participants": [
+    {
+      "company_id": "fagerhult",
+      "name": "Fagerhult",
+      "role": ""
+    }
+  ],
+  "progress": [
+    {
+      "date_precision": "day",
+      "disclosure_date": "2026-02-17",
+      "event_date": "2025-08-04",
+      "event_date_raw": "",
+      "fact": "财报确认 2025 年 8 月 4 日完成收购；披露日采用可核实的财报日。",
+      "id": "18",
+      "planned": false,
+      "sources": [
+        {
+          "excerpt": "On 4 August 2025, Fagerhult Group completed the acquisition",
+          "locator": "原文短摘录；未提供段落或页码定位",
+          "publication_date": "2026-02-17",
+          "publisher": "Fagerhult 官网",
+          "title": "Year-end report January–December 2025",
+          "url": "https://www.fagerhultgroup.com/files/mfn/efe45265-60e9-459c-aeed-f28aeb9546a4/fagerhult-group-ab-year-end-report-january-december-2025.pdf"
+        }
+      ],
+      "stage": "财报确认完成"
+    },
+    {
+      "date_precision": "day",
+      "disclosure_date": "2025-07-16",
+      "event_date": "2025-07-16",
+      "event_date_raw": "",
+      "fact": "签署收购 Capelon 全部股份的协议。",
+      "id": "17",
+      "planned": false,
+      "sources": [
+        {
+          "excerpt": "signed an agreement to acquire 100 percent of the shares in Capelon",
+          "locator": "原文短摘录；未提供段落或页码定位",
+          "publication_date": "2025-07-16",
+          "publisher": "Fagerhult 官网",
+          "title": "Smart lighting acquisition of Capelon announced",
+          "url": "https://www.fagerhultgroup.com/news/newsroom/2025/fagerhult-group-accelerates-within-smart-lighting-through-the-acquisition-of-capelon/"
+        }
+      ],
+      "stage": "签约"
+    }
+  ],
+  "purpose": "",
+  "purpose_type": "undisclosed",
+  "summary": "2025 年 7 月 16 日签约，8 月 4 日完成收购 Capelon。完成事实在本批采用 2026 年 2 月 17 日年终报告核实；尚未找到更早的正式完成公告。",
+  "tags": [],
+  "title": "Fagerhult 收购智能室外照明企业 Capelon"
+}

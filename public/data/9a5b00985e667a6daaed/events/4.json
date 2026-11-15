@@ -1,0 +1,65 @@
+{
+  "category": "M&A",
+  "company_ids": [
+    "signify"
+  ],
+  "id": "4",
+  "impact": "",
+  "impact_basis": "",
+  "latest_disclosure_date": "2022-05-03",
+  "latest_stage": "完成公告",
+  "participants": [
+    {
+      "company_id": "signify",
+      "name": "Signify",
+      "role": ""
+    }
+  ],
+  "progress": [
+    {
+      "date_precision": "unknown",
+      "disclosure_date": "2022-05-03",
+      "event_date": null,
+      "event_date_raw": "2022-04-29（官方二季度财报购买日；公告发表于 05-03）",
+      "fact": "5 月 3 日发布已完成收购公告；财报确定购买日为 4 月 29 日。",
+      "id": "6",
+      "planned": false,
+      "sources": [
+        {
+          "excerpt": "has completed the acquisition of Pierlite from Australian-based Gerard Lighting Group.",
+          "locator": "原文短摘录；未提供段落或页码定位",
+          "publication_date": "2022-05-03",
+          "publisher": "Signify 官网",
+          "title": "Signify successfully completes acquisition of Pierlite",
+          "url": "https://www.signify.com/en-au/our-company/news/press-releases/2022/20220503-signify-successfully-completes-acquisition-of-pierlite-strengthening-its-position-in-the-australian-and-new-zealand-lighting-markets"
+        }
+      ],
+      "stage": "完成公告"
+    },
+    {
+      "date_precision": "day",
+      "disclosure_date": "2022-02-09",
+      "event_date": "2022-02-09",
+      "event_date_raw": "",
+      "fact": "宣布收购 Pierlite，预计第二季度完成。",
+      "id": "5",
+      "planned": false,
+      "sources": [
+        {
+          "excerpt": "entered into a definitive agreement with Australian based Gerard Lighting Group",
+          "locator": "原文短摘录；未提供段落或页码定位",
+          "publication_date": "2022-02-09",
+          "publisher": "Signify 官方公告",
+          "title": "Signify to acquire Pierlite",
+          "url": "https://www.assets.signify.com/is/content/Signify/Assets/signify/australia/20220209-signify-to-acquire-pierlite-to-strengthen-position-in-australian-and-new-zealand-lighting-markets.PDF"
+        }
+      ],
+      "stage": "宣布签约"
+    }
+  ],
+  "purpose": "",
+  "purpose_type": "undisclosed",
+  "summary": "2022 年 2 月宣布向 Gerard Lighting Group 收购 Pierlite，5 月 3 日发布完成公告。二季度财报注明购买日为 4 月 29 日；不把公告日误作发生日。",
+  "tags": [],
+  "title": "Signify 收购澳新照明企业 Pierlite"
+}
