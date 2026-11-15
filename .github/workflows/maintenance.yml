@@ -1,0 +1,55 @@
+name: Website maintenance
+on:
+  schedule:
+    - cron: '23 3 * * 1'
+  workflow_dispatch:
+  workflow_run:
+    workflows: [Validate and publish Lighting MI]
+    types: [completed]
+permissions:
+  contents: read
+  issues: write
+  actions: read
+concurrency:
+  group: website-maintenance
+  cancel-in-progress: false
+jobs:
+  check:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      SITE_URL: https://7kpzkrfj45-netizen.github.io/lighting-mi/
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Verify deployed data, source references and hashes
+        run: python scripts/check_public_site.py --url "$SITE_URL" > health.json
+      - name: Data freshness (warning, not proof of collection success)
+        if: always()
+        run: |
+          if test -f health.json; then
+            python -c 'import json; d=json.load(open("health.json")); print("\n".join(d.get("warnings", [])))' >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - name: Check latest Pages deployment
+        run: |
+          gh api "repos/$GH_REPO/actions/workflows/pages.yml/runs?branch=main&per_page=1" --jq '.workflow_runs[0] | {status,conclusion,html_url}' > deployment.json
+          python -c 'import json; d=json.load(open("deployment.json")); assert d["status"]=="completed" and d["conclusion"]=="success", d'
+      - run: pip install -r requirements.txt pip-audit==2.10.1
+      - name: Audit browser-tool dependencies
+        run: pip-audit -r requirements.txt --progress-spinner off
+      - run: python -m playwright install --with-deps chromium
+      - name: Desktop, mobile, interactions and render budget
+        run: python scripts/site_browser_check.py --url "$SITE_URL"
+      - name: Track one actionable maintenance issue
+        if: failure()
+        run: |
+          title='[maintenance] Website automated check failed'
+          count=$(gh issue list --state open --search "$title in:title" --json number --jq length)
+          if test "$count" = 0; then
+            gh issue create --title "$title" --body "Automated check failed. Inspect: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID . Preserve the last valid dataset; do not bypass validation."
+          fi

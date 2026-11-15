@@ -3,6 +3,7 @@ import argparse
 import hashlib
 import json
 import re
+from datetime import date, datetime, timezone
 from pathlib import Path
 from urllib.parse import urlsplit
 
@@ -30,6 +31,9 @@ def validate(root):
     manifest = json.loads((root/'manifest.json').read_text())
     require(set(manifest) == {'schema_version','dataset_version','generated_at','data_as_of','event_count','files'}, 'Unexpected manifest field')
     require(manifest['schema_version']==1 and re.fullmatch('[0-9a-f]{20}',manifest['dataset_version']), 'Invalid schema/version')
+    cutoff = date.fromisoformat(manifest['data_as_of'])
+    generated = datetime.fromisoformat(manifest['generated_at'])
+    require(cutoff <= datetime.now(timezone.utc).date() and generated.tzinfo is not None, 'Invalid manifest dates')
     expected = ASSETS | {'manifest.json'}
     payloads = {}
     for key, item in manifest['files'].items():
@@ -55,6 +59,7 @@ def validate(root):
     companies=payloads['companies.json']
     require(len(companies)==19, 'Expected fixed 19 companies')
     company_ids={c['id'] for c in companies}
+    require(len(company_ids)==len(companies), 'Duplicate company ID')
     for c in companies:
         require(set(c)=={'id','name','group','aliases'} and c['group'] in {'China','International'}, 'Invalid company fields')
     index=payloads['events-index.json']
@@ -70,15 +75,21 @@ def validate(root):
         require(event['latest_disclosure_date']==max(p['disclosure_date'] for p in event['progress']), 'Latest date mismatch')
         for participant in event['participants']:
             require(set(participant)=={'company_id','name','role'} and participant['company_id'] in company_ids, 'Unexpected participant data')
+        require(len({p['id'] for p in event['progress']})==len(event['progress']), 'Duplicate progress ID')
         for p in event['progress']:
             require(set(p)==PROGRESS_KEYS and p['sources'], 'Unexpected progress field/no source')
-            require(p['disclosure_date']<=manifest['data_as_of'], 'Progress after data cutoff')
+            require(date.fromisoformat(p['disclosure_date'])<=cutoff, 'Progress after data cutoff')
+            require(p['date_precision'] in {'day','month','year','unknown'} and type(p['planned']) is bool, 'Invalid progress date/type')
+            if p['event_date']:
+                require(date.fromisoformat(p['event_date'])<=cutoff or p['planned'], 'Unmarked future stage')
             for s in p['sources']:
                 require(set(s)==SOURCE_KEYS and 0<len(s['excerpt'])<=800, 'Unexpected source field/excerpt')
                 u=urlsplit(s['url'])
                 require(u.scheme in {'http','https'} and u.hostname and not u.username and not u.password, 'Unsafe source URL')
     require(set(payloads)=={'companies.json','events-index.json','coverage.json','redirects.json'}|{f'events/{e["id"]}.json' for e in index}, 'Orphan data/detail file')
-    require(set(payloads['coverage.json'])=={'summary','complete','schema_version'} and payloads['coverage.json']['complete'] is False, 'Invalid coverage fields')
+    require({'summary','complete','schema_version'} <= set(payloads['coverage.json']) <= {'summary','complete','schema_version','reviewed_at'} and payloads['coverage.json']['complete'] is False, 'Invalid coverage fields')
+    if payloads['coverage.json'].get('reviewed_at'):
+        require(date.fromisoformat(payloads['coverage.json']['reviewed_at'])<=datetime.now(timezone.utc).date(), 'Future review date')
     redirects=payloads['redirects.json'];ids={e['id'] for e in index}
     require(all(old not in ids and target in ids and re.fullmatch('[1-9][0-9]*',old) for old,target in redirects.items()), 'Unsafe redirect')
     return {'files':len(actual),'events':len(index),'companies':len(companies),'dataset_version':manifest['dataset_version'],'data_as_of':manifest['data_as_of']}
